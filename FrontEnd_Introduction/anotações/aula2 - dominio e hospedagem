@@ -1,0 +1,21 @@
+Só consigo acessar o site de um "amigo" preciso que o HTML e CSS estejam em um servidor como, por exemplo, github.io 
+domínio =  nome único para o site há publico e pago anualmente 30-40 reais; 
+hospedagem = local onde irei armazenar na internet; paga mensalmente; espaço memoria e recursos (pode abrigar uma linguagem ou não) tem que escolher bem.
+dominio = "github.com"
+.com é o TLD = top level domain
+.co; .net; .info; ; io;  .store = gtld G é de genérico, .com para instituições comerciais; .gov para instituições governamentais; .store para loja
+.br = é cctld que para paises .us para estados unidos... .tv é para tuvalu que é para uma ilha 
+
+
+www é o subdominio principal
+/juniorjse é o caminho
+
+URL = localizador de recurso único "juniorjse.github.io"
+dominio = github.io
+gtld = .io
+subdominio = www.juniorjse
+http = é o protocolo 
+https = protocolo com segurança por SSL(serviço de criptografia de dados)
+
+
+
