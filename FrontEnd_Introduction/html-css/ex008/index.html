@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formatação de Textos</title>
+    <style>
+      mark {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque:</h2>
+    <p>
+      Nessa frase usando a tag &lt;b&gt;(não semântica):
+      <b
+        >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur,
+        aspernatur! Consequuntur enim sapiente ab quos, non sit laboriosam porro
+        velit numquam eum amet adipisci totam fugit deserunt consectetur soluta
+        maiores?</b
+      >
+    </p>
+    <p>
+      Nessa frase usando o strong(possuí semântica e destaque):
+      <strong
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque saepe
+        consectetur velit, provident accusamus deleniti quos voluptates cumque
+        quo ratione magnam ullam repellendus sapiente libero aliquam quis!
+        Fugit, molestias optio!</strong
+      >
+    </p>
+
+    <h2>Itálico / Ênfase</h2>
+    Nessa frase usando a tag &lt;i&gt;: <i>ESSA FRASE EM INTALICO</i> (usa o
+    ctrl + shift + p = abb daí digita i para itálico e n para negrito)
+    <p>
+      Nessa frase usaremos colocaremos em itálico, porém, com semântica ctrl +
+      shift + p + em:
+      <em
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+        atque architecto optio sunt fugiat harum soluta incidunt ullam
+        consequatur maxime, tenetur perferendis, totam, autem aspernatur
+        veritatis repellat accusamus assumenda odio?</em
+      >
+    </p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado usando a tag MARK, que deveria ser amarelo o padrão, porém,</mark> no crtl e <mark>usando o CSS podemos mudar a cor do mark</mark> para qualquer cor.</p> <!-- em HTML não há como mudar a cor, pois cor é forma e HTML só mexe com significado-->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando <big>um texto grande</big> e <small>um texto pequeno nesse parágrafo</small></p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> que não devemos considerar.</p>
+    <h2>Textp inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido posteriormente</ins> de escrito.</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>²+3</sup></p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+  </body>
+</html>
