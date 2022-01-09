@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeos em HTML5</title>
+    <style>
+      body {
+        background-color: rgb(30, 29, 30);
+      }
+    </style>
+    <!--Todos esses formatos servem, pois, por exemplo no safari n roda ogv e no chrome roda. daí é bom colocar todos os formatos-->
+  </head>
+  <body text="grey">
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>
+      Lembrando que no source os videos são alocados pelo tam. de armaz. menor -
+      maior.
+    </p>
+    <p>Vídeos alocados com a tag video vão consumir muito trafégo de dados. Por exemplo em um vídeo 11,5kb, daí meu site tem um acesso de 1000 pessoas, com isso, eu tenho um gasto de 11.500mb, daí dividindo por 1024 eu tenho um gasto de 11,2gb de consumo de banda (na melhor das hipóteses) e isso pesa muito no bolso. Por esse mótivo a melhor maneira de alocar vídeos é como a demonstrada abaixo.</p>
+    <video width="580" poster="imagens/bitcoin.jpeg" controls autoplay loop>
+      <source src="midia/meu_video.mp4" type="video/mp4" />
+      <source src="midia/meu_video.ogv" type="video/ogg" />
+      <source src="midia/meu_video.webm" type="video/webm" />
+      <source src="midia/meu_video.m4v" type="video/mp4" />
+      <p>Seu navegador não há compatibilidade com a reprodução do vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Ao criar um site para o cliente e o vídeo está hospedado no YouTube e isso economiza e aumenta a abragencia do site, pois o algoritmo do Google irá recomendar por ter um video seu "do YouTube". Se for um vídeo próprio é recomendado que crie um canal no youtube e up tal vídeo para lá. para aí sim incorporar aqui, pois vai economizar. o m4v é o mais recomendavél. muitos usam o vimeo ao invés de YouTube, pois há uma ótima qualidade de imagem, porém, o algoritmo é ruim, daí vai travar se a net do cliente não for muito boa mais. Usar youtube só se eu quiser limitar quem verá meu vídeo</p>
+    <iframe width="580" height="315" src="https://www.youtube.com/embed/b9JEhQbpUsA?start=32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <p>Há mais opções de formatação e mais qualidade; quando pausa não aparece outros vídeos de concorrentes/p>
+    
+    <iframe src="https://player.vimeo.com/video/332805663?h=8902c948e6&color=c9ff23&portrait=0/" width="580" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </body>
+</html>
