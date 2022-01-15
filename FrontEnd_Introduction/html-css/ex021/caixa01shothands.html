@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Caixas</title>
+    <!-- user agent é o navegador-->
+    <style>
+      body {
+      }
+      h1 { /*box-level*/
+        background-color: rgb(175, 252, 226);
+        height: 300px;
+        width: 300px;
+
+        border: 10px solid rgb(33, 156, 119);
+
+        padding: 10px 20px;
+        /*se cima direita baixo esquerda forem iguais coloca só 10px ao inves de 10px 10px 10px 10px
+        
+        10px(cima baixo)20px(direita esquerda)
+        */
+
+        margin: 20px auto 27px auto;
+        /*espaçamento entre a borda para fora
+        margin:auto;
+        alinha a imagem se colocar os valores da direita e esquerda como auto ele fica no meio*/
+
+        outline: 15px dotted forestgreen;
+        /*linha que contorna externamente a borda pode arredondar pouquissímo com uma linha em volta da borda contornando se colocar auto */
+      }
+      a {/*inline-level
+          O link é um bloco, mas pode ser inline se colocar display: inline; daí fica uma linha só para o link e ocupa a largura toda
+          inline-block vai ficar em linha, mas posso colocar altura, largura e tamanho == um botão*/
+        border-width: 10px;
+        border-style: solid;
+        border-color: black;
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+      Parágrafos também são box-level, mas os<a href="#">
+        links são inline-level</a
+      >
+    </p>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Caixas</title>
+    <!-- user agent é o navegador-->
+    <style>
+      body {
+      }
+      h1 {
+        background-color: aquamarine;
+        height: 300px;
+        width: 300px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgb(22, 85, 66);
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        /*espaçamento entre a borda para dentro*/
+
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 27px;
+        margin-left: 10px;
+        /*espaçamento entre a borda para fora
+        margin:auto;
+        alinha a imagem ao meio*/
+
+        outline-width: 5px;
+        outline-style: dotted;
+        outline-color: rgb(6, 128, 32);
+        /*linha que contorna externamente a borda*/
+      }
+      a {
+        border-width: 10px;
+        border-style: solid;
+        border-color: black;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+      Parágrafos também são box-level, mas os<a href="#">
+        links são inline-level</a
+      >
+    </p>
+  </body>
+</html>

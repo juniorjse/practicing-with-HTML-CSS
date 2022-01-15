@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color:firebrick;
+        color:antiquewhite;
+        text-align: center;
+        
+
+      }
+
+      header{
+        background-color:rgba(233, 207, 174, 0.377);
+        padding: 20px 10px; /*distancialmento das laterais*/
+        border-radius: 10px;
+        margin:0px;
+        box-shadow: 1px 1px 10px 2px rgb(131, 5, 5) inset;
+        /*sombra(SEMPRE PRETA) na header onde está "MEU SITE
+        INSET É A SOMBRA P DENTRO SE TIRAR FICA NORMAL EXTERNA.
+        https://www.devmedia.com.br/css3-border-trabalhando-com-bordas-em-css3/28923*/
+                /*box-shadow: 1px 1px 1px black;
+          primeiro px: deslocamento da sombra para esquerda se for número negativo e para direita se for número positivo
+          segundo pixel deslocamento da sombra para baixo se for positivo e para cima se for negativo
+          
+          PODE SER FEITA LÁ NO F12 SELECIONANDO O NAV E tá no print*/
+
+      }
+
+      nav{
+        background-color:rgb(255, 127, 127);
+        padding:5px;
+        display:inline;
+        /*deixar background do tamanho do texto*/
+        border-radius: 5px;
+
+        
+
+      }
+
+      nav > a{
+        color:rgb(100, 39, 75);
+        text-decoration: none;
+        font-weight: bold;
+        margin: 10px;
+        /* espaçamento entre os links*/
+      }
+      
+      nav > a:hover{
+        color:black;
+        text-decoration: underline;
+
+      }
+
+      main{
+        background-color:rgba(233, 208, 174, 0.452);
+        padding: 10px; /*distancialmento das laterais*/
+        margin: 10px;
+        border-radius: 5px;
+        margin:10px 0px;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.384);
+
+      }
+      article{
+        background-color:lightcoral;
+        border-radius: 5px;
+        padding:10px 20px;
+        outline: auto;
+        margin: 10px;
+        
+        /*linha branca*/
+
+      }
+      article > aside{
+        background-color:rgb(189, 90, 90);
+        /*parte mais escura dentro do artigo*/
+        padding:5px 5px;
+      }
+
+
+      footer{
+
+          background-color:rgba(0, 0, 0, 0.753);
+          color:firebrick;
+          border-radius: 5px;
+          display:inline-block;
+          padding:5px 10px;
+          /*espaçamento entre os a letra e background*/
+          margin: 10px;
+          /*PRESTAR ATENÇÃO NISSO DO BOTÃO*/
+      }
+
+      footer > p{
+        margin: 0px;
+          /*PRESTAR ATENÇÃO NISSO DO BOTÃO*/
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <section id = "notícias">
+          <p>Esportes, política e tecnologia</p>
+          <article>
+
+            <aside>
+              <h2>Notícias sobre o Brasil:</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptate impedit aliquid aut nobis minima eveniet autem amet doloremque molestias tempora quisquam vel magni architecto, neque corrupti molestiae doloribus inventore!</p>
+            </aside>
+            
+          </article>
+
+          <article>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ipsam architecto earum sed corporis quaerat modi, doloremque cum ex asperiores, blanditiis adipisci quibusdam, nisi fuga sequi porro iste. Inventore, quaerat.</p>
+          </article>
+          
+      </section>
+    </main>
+
+    <footer>
+      <p>Desenvolvido por Junior</p>
+    </footer>
+  </body>
+</html>
