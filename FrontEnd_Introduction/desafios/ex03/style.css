@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'tec';
+  src: url(../fonts/tgl_0-1451eng.ttf);
+}
+@font-face {
+  font-family: 'android';
+  src: url(../fonts/idroid.otf);
+}
+*{
+  margin:0;
+  padding: 0;
+  font-family:Ubuntu, sans-serif;
+  line-height: 1.5;
+
+}
+h1{
+  font-size:24px;
+}
+h1#title{
+  text-align: center;
+  font-family:tec;
+  font-weight: 300;
+  font-size: 40px;
+
+}
+.title{
+  text-align: left;
+  text-indent: 10px;
+
+}
+
+.introduction{
+  text-align: center;
+  text-decoration: none;
+  font-weight: 300;
+  
+  
+  
+}
+
+#introduction_segundo_p{
+  margin-top: -10px;
+  margin-bottom: 16px;
+}
+
+
+header{
+  padding-top:10px;
+  font-size: 18px;
+  color:white;
+  background-image:linear-gradient(to top,#1a5c38,#3bd380);
+}
+
+nav{
+  margin:20px;
+  padding:5x;
+}
+
+nav>a{
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+  padding: 20px 7px;
+}
+
+nav > a:hover{
+  color:#84e1ad;
+  text-decoration: underline;
+
+}
+
+.sidedireita {float:right; text-align: justify; width:49%;}
+.sideesquerda {float:left; text-align: justify; width:49%;}
+
+/*AQUI COMEÇA O TEXTO*/
+body{
+  background-color:#84e1ad;
+}
+
+.android{
+  font-family: android;
+  color:#1a5c38;
+  margin-left: 10px;
+  padding-left:10px;
+}
+
+main{
+  background-color:white;
+  margin:-19px 100px 18px 100px;
+  border-radius: 0px 0px 10px 10px;
+  padding:10px;
+  text-align: center;
+  box-shadow: -1px -2px 8px 0px rgb(0 0 0 / 20%);
+
+}
+
+p{
+  text-indent: 20px;
+  margin: 10px;
+}
+
+p.p_main{
+  text-align:justify;
+  
+}
+h1#frist_h1{
+  background-color:white;
+}
+
+h2{
+  background-image:linear-gradient(to right,#b1e4c8, white 90%);
+
+}
+
+.link{
+  color: #1a5c38;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+  padding: 20px 7px;
+}
+
+a.link:hover{
+  color:grey;
+  text-decoration: underline;
+
+}
+
+#mais{
+  background-color:#27aa62;
+  color:white;
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px 5px;
+  
+
+}
+
+#versions{
+  padding: 10px 10px;
+  background-color:#27aa6249;
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+iframe{
+  padding:20px 40px 20px 40px;
+  background-color: #1a5c38;
+  
+}
+
+
+
+
+
+/*FIM*/
+footer{
+  font-size: 13px;
+  text-align: center;
+  background-color:#1a5c38;
+  color:white;
+  padding:5px 10px;
+}
+
+footer > p{
+margin: 0px;
+}
