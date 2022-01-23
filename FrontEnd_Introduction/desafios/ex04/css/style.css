@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Urbanist:wght@300&display=swap');
+/*fonte para ser usada no texto*/
+
+body{
+  background-color:#85E1B5;
+}
+
+.button{
+  background-color: #fd5dad;
+  border:none;
+  transition: transform 300ms, background-color 300ms;
+  animation: pulse 500ms;
+}
+
+.button:hover{
+  transform: scale(1.80);
+  background-color:#ff3a9c;
+
+}
+
+.button:active{
+  transform:scale(0.95);
+  animation:none;
+}
+
+@keyframes pulse{
+  from{
+    box-shadow: #ff69b4 0 0 0;
+  }
+
+  to{
+    box-shadow: #ff69b400 0 0 0 5px;
+  }
+}
