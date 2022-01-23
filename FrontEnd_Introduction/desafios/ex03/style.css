@@ -8,115 +8,120 @@
   font-family: 'android';
   src: url(../fonts/idroid.otf);
 }
-*{
-  margin:0;
-  padding: 0;
-  font-family:Ubuntu, sans-serif;
+* {
+  margin: 0;
+  font-family: Ubuntu, sans-serif;
   line-height: 1.5;
-
 }
-h1{
-  font-size:24px;
+h1 {
+  font-size: 24px;
 }
-h1#title{
+h1#title {
   text-align: center;
-  font-family:tec;
+  font-family: tec;
   font-weight: 300;
   font-size: 40px;
-
 }
-.title{
+.title {
   text-align: left;
   text-indent: 10px;
-
 }
 
-.introduction{
+.introduction {
   text-align: center;
   text-decoration: none;
   font-weight: 300;
-  
-  
-  
 }
 
-#introduction_segundo_p{
+#introduction_segundo_p {
   margin-top: -10px;
   margin-bottom: 16px;
 }
 
-
-header{
-  padding-top:10px;
+header {
+  padding-top: 10px;
   font-size: 18px;
-  color:white;
-  background-image:linear-gradient(to top,#1a5c38,#3bd380);
-}
-
-nav{
-  margin:20px;
-  padding:5x;
-}
-
-nav>a{
-  font-size: 13px;
   color: white;
+  background-image: linear-gradient(to top, #1a5c38, #3bd380);
+}
+
+nav {
+  margin: 20px;
+  text-align:center;
+  bottom: 0;
+  padding: 5px 10px;
+
+
+}
+
+nav > a {
+  font-size: 13px;
+  color:#1a5c38;
   text-decoration: none;
-  text-align: left;
   font-weight: bold;
-  padding: 20px 7px;
+  padding: 5px 7px;
+  background-color:#84e1ad;
+  border-radius: 3px;
+  
+
 }
 
-nav > a:hover{
-  color:#84e1ad;
+nav > a:hover {
+  color: grey;
   text-decoration: underline;
-
 }
 
-.sidedireita {float:right; text-align: justify; width:49%;}
-.sideesquerda {float:left; text-align: justify; width:49%;}
+.sidedireita {
+  float: right;
+  text-align: justify;
+  width: 49%;
+}
+.sideesquerda {
+  float: left;
+  text-align: justify;
+  width: 49%;
+}
 
 /*AQUI COMEÇA O TEXTO*/
-body{
-  background-color:#84e1ad;
+body {
+  background-color: #84e1ad;
+  position:absolute;
 }
 
-.android{
+section.android {
   font-family: android;
-  color:#1a5c38;
-  margin-left: 10px;
-  padding-left:10px;
+  color: #1a5c38;
 }
 
-main{
-  background-color:white;
-  margin:-19px 100px 18px 100px;
+main {
+  background-color: white;
+  margin: -19px 300px 18px 300px;
   border-radius: 0px 0px 10px 10px;
-  padding:10px;
-  text-align: center;
+  padding: 10px;
   box-shadow: -1px -2px 8px 0px rgb(0 0 0 / 20%);
-
+  text-align: center;
 }
 
-p{
+p {
   text-indent: 20px;
   margin: 10px;
 }
 
-p.p_main{
-  text-align:justify;
-  
+p.p_main {
+  text-align: justify;
 }
-h1#frist_h1{
-  background-color:white;
-}
-
-h2{
-  background-image:linear-gradient(to right,#b1e4c8, white 90%);
-
+h1#frist_h1 {
+  background-color: white;
 }
 
-.link{
+h2 {
+  background-image: linear-gradient(to right, #b1e4c8, white 90%);
+  font-family: android;
+  color: #1a5c38;
+}
+
+h1 {
+  font-family: android;
   color: #1a5c38;
   text-decoration: none;
   text-align: left;
@@ -124,47 +129,44 @@ h2{
   padding: 20px 7px;
 }
 
-a.link:hover{
-  color:grey;
-  text-decoration: underline;
-
+a.link {
+  color: #1a5c38;
 }
 
-#mais{
-  background-color:#27aa62;
-  color:white;
+a.link:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+#mais {
+  background-color: #27aa62;
+  color: white;
   border-radius: 10px 10px 0px 0px;
   padding: 5px 5px;
-  
-
 }
 
-#versions{
+#versions {
   padding: 10px 10px;
-  background-color:#27aa6249;
+  background-color: #27aa6249;
   border-radius: 0px 0px 10px 10px;
-
 }
 
-iframe{
-  padding:20px 40px 20px 40px;
+iframe {
+  padding: 20px 40px 20px 40px;
   background-color: #1a5c38;
-  
 }
-
-
-
-
 
 /*FIM*/
-footer{
+footer {
+  margin: 0px;
   font-size: 13px;
+  bottom: 0;
   text-align: center;
-  background-color:#1a5c38;
-  color:white;
-  padding:5px 10px;
+  background-color: #1a5c38;
+  color: white;
+  padding: 5px 10px;
 }
 
-footer > p{
-margin: 0px;
+footer > p {
+  margin: 0px;
 }
