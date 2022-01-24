@@ -44,6 +44,10 @@ body{
 }
 /*UM MAIN COM UM Ṕ EM QUALQUER NIVEL, POIS NÃO ENGLOBARIA UM ARTICLE NEM DIV*/
 
+a.externo::after{
+  content: '\00A0\1F517';
+  /*COLOQUEI EMOJI EM TODO LINK E DEIXEI O ESPAÇO*/
+}
 
 header{
   background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
@@ -56,6 +60,7 @@ header > h1{
   color:white;
   font-family:var(--font-destaque);
   font-size: 3em;
+  font-weight: normal;
   margin-bottom:20px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.473);
 
@@ -117,11 +122,6 @@ nav{
     box-shadow: #ff69b400 0 0 0 5px;
   }
 }
-main h1{
-  color:var(--cor5);
-  font-family: var(--font-android);
-
-}
 
 main{
   min-width: 300px;
@@ -136,10 +136,22 @@ main{
 
 }
 
+main h1{
+  color:var(--cor5);
+  font-family: var(--font-android);
+  font-weight: normal;
+  /*Deixa letra mais fina*/
+  font-size: 1.8em;
+
+}
+
+
 main h2{
   font-family: var(--font-android);
   color: var(--cor4);
   font-size: 1.3em;
+  font-weight: normal;
+
   background-image: linear-gradient(to right, var(--cor1), transparent);
   text-indent: 8px;
   border-radius:2px;
@@ -169,7 +181,7 @@ main a {
   color: var(--cor5);
   text-decoration: none;
   font-weight: bold;
-  background-color: var(--cor1);
+  background-color: var(--cor0);
   border-radius: 2px;
   padding: 1px 3px;
   
@@ -187,7 +199,65 @@ main img#pequena{
   margin: auto;
 }
 
+div.video{
+  background-color: var(--cor3);
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom:59%;/*SERVE PARA TIRAR AQUELA BARRA PRETA QUE FICA QUANDO DÁ PLAY NO VIDEO DAÍ AUMENTA OU DIMINUI, DEPENDE DO VÍDEO*/
+  position: relative;
+}
+div.video > iframe{
+  position: absolute;
+  top:5%;
+  left:5%;
+  /*SE QUISER TIRAR AS BORDAS SÓ É DEIXAR EM 100%*/
+  width:90%;
+  height:90%;
+  
+}
+aside{
+  
+  background-color: var(--cor1);
+  padding:10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.349);
+}
+
+aside > h3{
+  background-color:var(--cor4);
+  color:white;
+  /*aside, ficou com um bloco acima do texto principal o azul escuro*/
+  padding: 10px;
+  margin: -10px -10px 0px -10px;
+  border-radius: 10px 10px 0px 0px;
+}
+/*Toda ul dentro de aside recepbera isso*/
+aside > ul{
+  list-style-position: inside;/*isso serve para remover os bolinhas da lista e estão fora do background*/
+  columns: 2;/*para dividir a lista em duas colunas*/
+  list-style-type: '\2714\00A0\00A0';/*inserir emoji ao inves das bolinhas na lista só precisa da parte númerica - o 00A0\00A0 serve para deixar um espaço assim como text-indent MAS N É COMPATIVEL COM TODO NAVEGADOR*/
+}
+
 footer{
   background-color:var(--cor5);
   color:white;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 5px;
 }
+/*FFOOTER E NO PARAGRAFO E TODO LINK DENTRO DO PARAGRAFO ou fazer só footer> a*/
+footer > p > a{
+  color:white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: underline;
+  color: var(--cor1)
+}
+
+/*Vídeo responsivo
+alinhar ao meio e deixar responsivo
+*/
+
