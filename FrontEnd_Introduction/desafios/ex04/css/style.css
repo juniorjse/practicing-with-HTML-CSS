@@ -1,14 +1,95 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Urbanist:wght@300&display=swap');
-/*fonte para ser usada no texto*/
+@font-face {
+  font-family: 'Android';
+  src: url('../fontes/idroid.otf') format('opentype');
+  font-weight:normal;
+}
+@font-face {
+  font-family: 'Destaque';
+  src: url('/fontes/Staatliches-Regular.ttf') format('opentype');
+  font-weight:normal;
+
+}
+
+@font-face {
+  font-family: 'Padrao';
+  src: url('../fontes/PlusJakartaDisplay-Medium.otf') format('normal');
+  font-weight:normal;
+}
+
+
+:root{
+  --cor0:#B9E8E4;
+  --cor1:#7DC0CA;
+  --cor2:#3DAEBF;
+  --cor3:#2D808C;
+  --cor4:#164A52;
+  --cor5:#102e33;
+
+  --font-padrao: 'Padrao', sans-serif;
+  --font-destaque: 'Destaque', cursive;
+  --font-android: 'Android', cursive;
+}
+
+*{
+  margin:0px;
+  padding:0px;
+  /*zerar espaços globais*/
+}
 
 body{
-  background-color:#85E1B5;
+  background-color:var(--cor0);
+  font-family:var(--font-padrao);
+}
+/*UM MAIN COM UM Ṕ EM QUALQUER NIVEL, POIS NÃO ENGLOBARIA UM ARTICLE NEM DIV*/
+
+
+header{
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+  min-height: 150px;
+  text-align: center;
+  padding-top:40px;
+}
+
+header > h1{
+  color:white;
+  font-family:var(--font-destaque);
+  font-size: 3em;
+  margin-bottom:20px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.473);
+
+}
+
+header > p{
+  font-family: var(--font-padrao);
+  font-size: 1.2em;
+  color:white;
+/*ALINHA  O RESUMO E DEIXA ELE RESPONSIVO*/
+  max-width:500px;
+  margin:auto;
+  padding: 0px 10px 20px 10px;
+  /*SOMBRA NO TEXTO*/
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.473);
+
+}
+
+nav{
+  background-color:var(--cor5);
+  padding:10px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.329);
+  text-align: center;
+
 }
 
 .button{
-  background-color: #fd5dad;
+  margin:3px;
+  color:var(--cor4);
+  padding:2px 10px 2px;
+  text-decoration: none;
+  font-weight:bold;
+  border-radius:3px;
+  background-color: var(--cor0);
   border:none;
   transition: transform 300ms, background-color 300ms;
   animation: pulse 500ms;
@@ -16,7 +97,9 @@ body{
 
 .button:hover{
   transform: scale(1.80);
-  background-color:#ff3a9c;
+  background-color:var(--cor2);
+  color: var(--cor5);
+  transition-duration: 0.5s;
 
 }
 
@@ -27,10 +110,84 @@ body{
 
 @keyframes pulse{
   from{
-    box-shadow: #ff69b4 0 0 0;
+    box-shadow: var(--cor1) 0 0 0;
   }
 
   to{
     box-shadow: #ff69b400 0 0 0 5px;
   }
+}
+main h1{
+  color:var(--cor5);
+  font-family: var(--font-android);
+
+}
+
+main{
+  min-width: 300px;
+  max-width: 1000px;
+  /*ISSO DEIXA AS IIMAGENS RESPONSIVAS JUNTO COM O TEXTO*/
+  margin:auto;/*ISSO PARA EM TELAS MUITO GRANDES A MARGEM N CRESCER*/
+  margin-bottom: 30px;
+  background-color:white;
+  padding:20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+main h2{
+  font-family: var(--font-android);
+  color: var(--cor4);
+  font-size: 1.3em;
+  background-image: linear-gradient(to right, var(--cor1), transparent);
+  text-indent: 8px;
+  border-radius:2px;
+}
+
+main img{
+  width: 100%;/*ISSO FAZ COM QUE AS IMAGENS SE EXPREMAM E ADAPTEM E EM 1000PX PARA DE CRESCER COMO DITO NO MAIN*/
+
+}
+
+main p{
+  margin: 15px 0px 15px 0px;
+  /*DEIXA O DISTANCIAMENTO ENTRE O PARAGRAFO E O H*/
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1em;
+  line-height: 1.7em;/*ALTURA ENTRE AS LINHAS*/
+}
+
+main strong{
+  color: var(--cor4);
+  font-weight: bold;
+
+}
+
+main a {
+  color: var(--cor5);
+  text-decoration: none;
+  font-weight: bold;
+  background-color: var(--cor1);
+  border-radius: 2px;
+  padding: 1px 3px;
+  
+}
+
+main a:hover{
+  text-decoration: underline;
+  color:var(--cor4)
+}
+
+main img#pequena{
+  max-width: 350px;
+  /*TAMANHO MÁXIMO DE LARGURA DEIXA A RESOLUÇÃO BOA E QUANDO DIMINUI ELE NÃO AUMENTA NEM DIMINUI*/
+  display: block;
+  margin: auto;
+}
+
+footer{
+  background-color:var(--cor5);
+  color:white;
 }
