@@ -199,22 +199,6 @@ main img#pequena{
   margin: auto;
 }
 
-div.video{
-  background-color: var(--cor3);
-  margin: 0px -20px 30px -20px;
-  padding: 20px;
-  padding-bottom:59%;/*SERVE PARA TIRAR AQUELA BARRA PRETA QUE FICA QUANDO DÁ PLAY NO VIDEO DAÍ AUMENTA OU DIMINUI, DEPENDE DO VÍDEO*/
-  position: relative;
-}
-div.video > iframe{
-  position: absolute;
-  top:5%;
-  left:5%;
-  /*SE QUISER TIRAR AS BORDAS SÓ É DEIXAR EM 100%*/
-  width:90%;
-  height:90%;
-  
-}
 aside{
   
   background-color: var(--cor1);
@@ -260,4 +244,19 @@ footer a:hover{
 /*Vídeo responsivo
 alinhar ao meio e deixar responsivo
 */
-
+div.video{
+  background-color: var(--cor3);
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom:59%;/*SERVE PARA TIRAR AQUELA BARRA PRETA QUE FICA QUANDO DÁ PLAY NO VIDEO DAÍ AUMENTA OU DIMINUI, DEPENDE DO VÍDEO*/
+  position: relative;
+}
+div.video > iframe{
+  position: absolute;
+  top:5%;
+  left:5%;
+  /*SE QUISER TIRAR AS BORDAS SÓ É DEIXAR EM 100%*/
+  width:90%;
+  height:90%;
+  
+}
