@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  border: 1px solid;
+  justify-content:center;
+  align-items:center;
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+/**/
+.content{
+  background-color: white;
+  border-radius: 15px;
+  width:80%;
+  height:50%;
+  /*para centralizar*/
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  /*para o background verde não extourar e conter na box*/
+  position: relative;
+}
+
+/*verde a ser substituido por harry*/
+.content::before{
+  content: "";
+  position: absolute;
+  background-color: #58af9b;
+  width: 40%;
+  height: 100%;
+}
+
+.first-content{
+  display: flex;
+}
+
+.title{
+  font-size:28px;
+  font-weight: bold;
+  /*deixa as primeiras letras em caixa alta*/
+  text-transform: capitalize;
+}
+
+.title-primary{
+  color:white;
+}
+.description{
+  font-size:14px;
+  font-weight: 300;
+  color:white;
+  line-height: 30px;
+}
+
+.btn{
+  border-radius:15px;
+  text-transform: uppercase;
+  color:white;
+  font-size:10px;
+  padding:10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-primary{
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.btn-primary:hover{
+  background-color: white;
+  color:#58af9b
+
+}
+.title-welcome{
+  color:white;
+  text-transform: capitalize;
+
+}
+
+.first-column{
+  text-align: center;
+  /*espaçamento*/
+  flex: 1 0 auto;
+  /*sobrepor o texto ao background verde*/
+  z-index: 10;
+}
+
+.second-column{
+  flex: 2 0 auto;
+}
+.list-social-media{
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.second-content{
+  position: absolute;
+  display: none;
+}
