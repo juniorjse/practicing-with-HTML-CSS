@@ -60,18 +60,27 @@ body{
 .description{
   font-size:14px;
   font-weight: 300;
-  color:white;
   line-height: 30px;
+}
+
+.description-primary{
+  color:white;
+}
+
+.description-second{
+  color:#7f8c8d;
 }
 
 .btn{
   border-radius:15px;
   text-transform: uppercase;
-  color:white;
+  color: white;
   font-size:10px;
   padding:10px 50px;
   cursor: pointer;
   font-weight: bold;
+  width: 150px;
+  align-self: center;
 }
 
 .btn-primary{
@@ -90,6 +99,10 @@ body{
 
 }
 
+.title-second{
+  color:#58af9b;
+}
+
 .first-column{
   text-align: center;
   /*espaçamento*/
@@ -98,16 +111,44 @@ body{
   z-index: 10;
 }
 
+.first-content {
+  display: flex;
+}
+
 .second-column{
   flex: 2 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .list-social-media{
   display: flex;
+  list-style-type: none;
+}
+.item-social-media{
+  border: 1px solid #bdc3c7;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.item-social-media a{
+  color:#95a5a6;
+
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  width: 55%;
+}
+
+.form input {
+  height: 45px;
+  border: none;
+  background-color: #ecf0f1;
+  margin: 8px;
 }
 
 
