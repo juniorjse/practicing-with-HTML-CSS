@@ -18,12 +18,14 @@ header {
   color:white;
   text-align: center;
   text-transform: capitalize;
+  /*font-variant: small-caps;*/
   font-family: 'Passion One', cursive;
 }
 
 header > h1{
   padding-top: 50px;
   font-variant: small-caps;
+  /*aumenta e diminui o tamanho da letra ao decorrer que aumenta ou diminui tela*/
   font-size: 10vw;
 }
 
@@ -41,6 +43,7 @@ p {
 
 
 section{
+  /*distanciamento entre os poemas e deixa responsivo quando encurtar esse padding, criando efeito parallax*/
   padding-top: 10vh;
   padding-bottom: 10vh;
   line-height: 2em;
@@ -64,21 +67,30 @@ section.normal{
   background-color:white;
 }
 
+section.imagem{
+  background-color:rgb(37, 37, 37);
+  box-shadow: -1px 6px 19px 5px rgb(0 0 0 / 20%);
+  background-size: cover;
+  background-position: right center;
+}
+
 section.imagem > p{
+  display:inline-block;
+  padding: 5px;
   background-color: rgba(0, 0, 0, 0.521);
   color: white;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  
 }
 
 section#joaninha {
-  background: black url(../imagens/background001.jpg) right center no-repeat fixed;
+  background-image: url(../imagens/background001.jpg);
 
 }
 
-
 section#cordel {
-  background: black url(../imagens/background002.jpg) right center no-repeat fixed;
+  background-image: url(../imagens/background002.jpg);
 
 }
 
