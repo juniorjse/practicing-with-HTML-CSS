@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    table{
+      border:1px solid black;
+      padding:8px;
+      border-collapse: collapse;
+    }
+    
+    td{
+      border:1px solid black;
+      width: 100px;
+      padding:8px;
+    }
+    .numero{
+      border:1px solid;
+      background-color:rgb(250, 196, 255);
+
+    }
+    tr.linha{
+      background-color:rgb(127, 157, 255);
+    }
+  </style>
+</head>
+<body>
+  <h1>Minha primeira tabela</h1>
+      <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+          TABLE ROW = linha de tabela
+              TABLE HEADER = cabeçalho de tabela
+              TABLE DATA = dado de tabela
+
+    -->
+  <table>
+    <!--Não é obrigatória usar o fechamento td e tr, porém, tem que ser na hierarquia correta, pois os dados colocados irão aparecer antes ou depois-->
+    <tr class="linha"> <!-- Primeira linha -->
+        <td>A1
+        <td>B1
+        <td>C1
+    
+    <tr> <!-- Segunda linha -->
+      <td>A2
+      <td>B2
+      <td class="numero">C2
+    
+    <tr> <!-- Terceira linha -->
+        <td>A3
+        <td>B3
+        <td class="numero">C3
+    </tr>
+    <tr> <!-- Quarta linha -->
+      <td>A4
+      <td>B4
+      <td>C4
+  </tr>
+
+  </table>
+  
+</body>
+</html>
