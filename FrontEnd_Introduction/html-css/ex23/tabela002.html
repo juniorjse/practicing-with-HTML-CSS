@@ -14,14 +14,22 @@
       border-collapse:collapse;
       
     }
+    caption{
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color:aliceblue;
+      border: 1px solid rgb(5, 5, 5);
+
+    }
     td,th{
-      border: 1px solid black;
+      border: 1px solid rgb(5, 5, 5);
       padding:10px;
     }
     
     thead,tfoot {
       
-      background-color:black;
+      background-color:rgb(48, 48, 53);
       color:white;
     }
     .num{
@@ -41,12 +49,18 @@
               TR, TD, TH
           TFOOT  rodapé
               TR, TD, TH
+
+      SE USA TH PARA A CATÉGORIA título ex: ESTADO, POPULAÇÃO
+      SE USA TD para o nome específico/dado ex: São Paulo, Paraíba
   -->
   <table>
+    <caption>População das Unidades Federativas</caption>
     <thead>
       <tr>
-        <th>Estado</th>
-        <th>População</th>
+        <!-- Como os dados de estado e população estão em coluna coloca "col"-->
+        <th scope="col">Estado</th>
+        <th scope="col" style="width:50px">População</th>
+        <!--Atribuindo esse width para população, é reduzido lá de table no style, 450 fica para Estado e 50 para população-->
       </tr>
     </thead>
     <tbody>
@@ -162,7 +176,8 @@
     </tbody>
     <tfoot> <!--Swempre aparecerá no final da tabela-->
       <tr>
-        <th>Total de Habitantes</th>
+        <!--Como os dados de Habitantes estão na linha, colocasse row no scope-->
+        <th scope="row">Total de Habitantes</th>
         <td class="num">212.600.000</td>
       </tr>
     </tfoot>
