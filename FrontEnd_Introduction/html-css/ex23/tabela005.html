@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colgroup</title>
+</head>
+<style>
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  table {
+      width: 500px;
+      border-collapse: collapse;
+      position: relative;
+  }
+
+  td, th {
+      border: 1px solid black;
+      padding: 10px;
+  }
+
+  caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: lightgray;
+  }
+
+  thead, tfoot {
+      background-color: #383838;
+      color: white;
+  }
+
+  col.A{
+    background-color: aqua;
+  }
+
+  col.B{
+    background-color: rgb(134, 180, 180);
+  }
+
+
+  td.num {
+      text-align: right;
+  }
+
+  .azul{
+    background-color:cornflowerblue;
+  }
+
+  .vinho{
+    background-color:firebrick;
+  }
+</style>
+<body>
+  
+</body>
+<table>
+  <caption>Cadastro</caption>
+  <colgroup>
+  <col class="A" span="2"> <!--A fica sendo A e B, pois deu span em dois-->
+  <col class="B">
+  <col class="D">
+
+  </colgroup>
+  <tr>
+    <th scope="col">A</th>
+    <th scope="col">B</th>
+    <th scope="col">C</th>
+    <th scope="col">D</th>
+
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+</table>
+
+
+<!------------------------------------------------------------->
+<table>
+  <caption>Cadastro</caption>
+  <colgroup>
+  <col class="azul"> <!--A fica sendo A e B, pois deu span em dois-->
+  <col class="vinho">
+  <col class="azul">
+  <col class="vinho">
+
+  </colgroup>
+  <tr>
+    <th scope="col">A</th>
+    <th scope="col">B</th>
+    <th scope="col">C</th>
+    <th scope="col">D</th>
+
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+  </tr>
+</table>
+</html>
