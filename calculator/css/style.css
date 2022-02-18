@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('font/helveticaneue.ttf') format('truetype');
+  font-weight:bold;
+  font-style:normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display:flex;
+  justify-content: center;
+  padding:50px;
+}
+
+.container {
+  width: 330px;
+  background-color: #0e0e0e;
+  text-align: center;
+  border-radius: 32px;
+  padding: 20px 5px 15px;
+}
+
+.screen {
+  height:175px;
+  color:#a5a5a5;
+  font-family: 'Helvetica Neue';
+}
+
+.row{
+  display: flex;
+  justify-content:center;
+}
+
+.row .col{
+  flex: 1;
+}
+
+.row .col button.grey_small{
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  /*COR DO BOTÃO CINZA CLARO*/
+  background-color:#a5a5a5;
+  font-size:27px;
+  border: none;
+  color: black;
+}
+
+.row .col button.orange_small{
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  /*COR DO BOTÃO CINZA CLARO*/
+  background-color: #ff9702;
+  font-size:27px;
+  border: none;
+  color: white;
+}
+
+.row .col button.dark_small{
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  /*COR DO BOTÃO CINZA ESCURO*/
+  background-color:#343434;
+  font-size:32px;
+  border: none;
+  color: white;
+}
+
+.collg{
+  flex: 2;
+}
+
+.row .collg button.dark_large{
+  height: 65px;
+  width: 140px;
+  border-radius: 30px;
+  background:#343434;
+  font-size: 32px;
+  border: none;
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+  
+
+}
+
+
+.row .col button.orange_small:active{
+  background-color:#fad5a0 ;
+  color:#ff9702;
+}
+
+.row .col button.grey_small:active{
+  background-color:white ;
+  color: black;
+}
+
+.row .col button.dark_small:active{
+  background-color:#9e9c9ca8 ;
+  color: white;
+}
+
+.row .collg button.dark_large:active{
+  background-color:#9e9c9ca8 ;
+  color: white;
+}
+
